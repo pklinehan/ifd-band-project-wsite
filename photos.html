@@ -13,10 +13,44 @@
 <body>
 <!-- add header from main page   -->
     <header class="container-fluid">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Monkees</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span> Home</span></a></li>
+                        <li><a href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i><span> Photos</span></a></li>
+                        <li><a href="music.html"><i class="fa fa-music" aria-hidden="true"></i><span> Music</span></a></li>
+                        <li><a href="booking.html"><i class="fa fa-calendar" aria-hidden="true"></i><span> Bookings</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--display button with 3 bars -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
     </header>
+ 
+
     <section class="container-fluid ">
         <div class="row bg-color-gallery">
-            <div class="col-xs-6 col-lg-3">
+            <!-- need some extra space on devices other than mobile -->
+            <div class="visible-sm visible-md visible-lg"><br><br><br><br></div>
+            
+            <div class="center-block col-xs-6 col-sm-4 col-md-4 col-lg-3">
                     <a href="photos/album1.jpg" target="_break">
                         <img src="photos/album1.jpg" alt="Album1" class="img-thumbnail img-small">
                      <div class="caption">
@@ -24,7 +58,7 @@
                        </div>
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3">
+            <div class="center-block col-xs-6 col-sm-4 col-md-4 col-lg-3">
           
                     <a href="photos/album2.jpg" target="_break">
                       <img src="photos/album2.jpg" alt="Album2" class="img-thumbnail img-small">
@@ -34,7 +68,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3" >
+            <div class="center-block col-xs-6 col-sm-4 col-md-4 col-lg-3">
      
                     <a href="photos/album3.jpg#" target="_break">
                       <img src="photos/album3.jpg" alt="Album3" class="img-thumbnail img-small">
@@ -44,7 +78,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
       
                     <a href="photos/band1.jpg" target="_break">
                       <img src="photos/band1.jpg" alt="Band1" class="img-thumbnail img-small">
@@ -54,9 +88,7 @@
                      
                     </a>
             </div>
-        </div>
-         <div class="row bg-color-gallery">
-            <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
                     <a href="photos/band2.jpg" target="_break">
                         <img src="photos/band2.jpg" alt="Band2" class="img-thumbnail img-small">
                      <div class="caption">
@@ -64,7 +96,7 @@
                        </div>
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
           
                     <a href="photos/band3.jpg" target="_break">
                       <img src="photos/band3.jpg" alt="Band3" class="img-thumbnail img-small">
@@ -74,7 +106,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3" >
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
      
                     <a href="photos/band4.png" target="_break">
                       <img src="photos/band4.png" alt="Band4" class="img-thumbnail img-small">
@@ -84,7 +116,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
       
                     <a href="photos/band5.jpg" target="_break">
                       <img src="photos/band5.jpg" alt="Band5" class="img-thumbnail img-small">
@@ -94,10 +126,8 @@
                      
                     </a>
             </div>
-        </div>
 
-        <div class="row bg-color-gallery">
-            <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
                     <a href="photos/member1.jpg" target="_break">
                         <img src="photos/member1.jpg" alt="Member1" class="img-thumbnail img-small">
                      <div class="caption">
@@ -105,7 +135,7 @@
                        </div>
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
           
                     <a href="photos/member2.jpg" target="_break">
                       <img src="photos/member2.jpg" alt="Member2" class="img-thumbnail img-small">
@@ -115,7 +145,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3" >
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
      
                     <a href="photos/member3.jpg" target="_break">
                       <img src="photos/member3.jpg" alt="Member3" class="img-thumbnail img-small">
@@ -125,7 +155,7 @@
                      
                     </a>
             </div>
-             <div class="col-xs-6 col-lg-3" >
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
      
                     <a href="photos/member4.jpg" target="_break">
                       <img src="photos/member4.jpg" alt="Member4" class="img-thumbnail img-small">
@@ -138,10 +168,18 @@
     </div>
 
     </section>
-<!-- add footer from main page -->
-    <footer class="container-fluid ">
- 
-    </footer>
+        <footer class="container-fluid ">
+            <div id="footer-details " class="row ">
+                <div class="col-xs-4 "></div>
+                <div class="col-xs-4 ">
+                    <ul class="list-inline social-links ">
+                        <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

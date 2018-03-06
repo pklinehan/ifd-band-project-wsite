@@ -12,141 +12,83 @@
 
 <body>
     <header class="container-fluid">
-        
-    <nav class="navbar navbar-default">
 
-        <div class="container-fluid">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Monkees</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span> Home</span></a></li>
+                        <li><a href="photos.html"><i class="fa fa-camera" aria-hidden="true"></i><span> Photos</span></a></li>
+                        <li><a href="music.html"><i class="fa fa-music" aria-hidden="true"></i><span> Music</span></a></li>
+                        <li><a href="booking.html"><i class="fa fa-calendar" aria-hidden="true"></i><span> Bookings</span></a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
 
-            <div class="navbar-collapse collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span> Home</span></a></li>
-                    <li><a href="photos.html"><i class="fa fa-calendar" aria-hidden="true"></i><span> Photos</span></a></li>
-                    <li><a href="music.html"><i class="fa fa-music" aria-hidden="true"></i><span> Music</span></a></li>
-                    <li><a href="bookings.html"><i class="fa fa-calendar" aria-hidden="true"></i><span> Bookings</span></a></li>
+        <!--display button with 3 bars -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </header>
 
-                </ul>
-
-
-            </div>
-        </div>
-    </nav>
-    
-    
-      <div class="container-fluid callout-container">
+    <div class="container-fluid callout-container">
         <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
-                    <p class="lead">Welcome to our website. Check out our music and photo archives.</p>
+                    <p class="lead">Welcome to our website. <br>Check out our music and photo archives.<br> We would love to perform for you at your events. Book us
+                        <a href="booking.html">here</a></p>
                 </section>
             </div>
         </div>
-    </div>     
-       <div class="container-fluid video-container">
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="embed-responsive embed-responsive-4by3">
-                    <video src="videos/TheMonkees.mp4" class="embed-responsive-item" controls></iframe>
-                    </video>
-                </div>
-            </div>
-         
-             <div class="col-xs-6">
-                <section class="jumbotron text-center">
-                    <p class="lead">Coming soon! Watch out for our new music.</p>
-                </section>
-         
-            </div>
+    </div>
+
+        <div class="alert">
+        <strong>Coming soon!</strong> Watch out for our new material
         </div>
-    </div>            
         
+ 
         
-        
-        
-        
-        
-        
-        
- <!--       
-   <nav class="navbar navbar-default">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="container-fluid video-container">
+          <div class="text-center">
+                <p>A blast from the past</p>
             </div>
+           <div>
+            <video class="center-block" width="50%" poster="photos/band5.jpg" controls>
+                <source  src="videos/TheMonkees.ogv" type="video/ogg"/>
+            </video> 
+</div>
+        </div>
+    </div>
 
-            <div class="navbar-collapse collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
-                    <li><a href="photos.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>Photos</span></a></li>
-                    <li><a href="music.html"><i class="fa fa-music" aria-hidden="true"></i><span>Photos</span></a></li>
-                    <li><a href="bookings.html"><i class="fa fa-calendar" aria-hidden="true"></i><span>Photos</span></a></li>
-                </ul>
-            </div>
-    </nav>
-    -->
-    <!--
-                <div class="row">
-                    <a href="index.html">
-                        <div class="col-xs-3 logo"></div>
-                    </a>
-                    <ul id="nav" class="list-inline clearfix">
-                        <li class="col-xs-3 col-sm-3 ui-menu-color-home menuitem">
-                            <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                        </li>
-                        <li class="col-xs-3 col-sm-3 ui-menu-color-resume menuitem">
-                            <a href="photos.html" class="hvr-sweep-to-bottom"><i class="fa fa-camera" aria-hidden="true"></i><span>Photos</span></a>
-                        </li>
-                        <li class="col-xs-3 col-sm-3 ui-menu-color-contact menuitem">
-                            <a href="music.html" class="hvr-sweep-to-bottom"><i class=" fa fa-music " aria-hidden="true "></i><span>Music</span></a>
-                        </li>
-                        <li class="col-xs-3 col-sm-3 ui-menu-color-contact menuitem">
-                            <a href="booking.html" class="hvr-sweep-to-bottom"><i class=" fa fa-calendar " aria-hidden="true "></i><span>Book Us</span></a>
-                        </li>
+    <br>
+    <br>
+
+    <footer class="container-fluid">
+            <div id="footer-details " class="row ">
+                <div class="col-xs-4 "></div>
+                <div class="col-xs-4 ">
+                    <ul class="list-inline social-links">
+                        <li class="center-block" ><a target="_blank " href="# " class="center-block" ><i class="fa fa-facebook "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-     -->
-    </header>
-    <section class="container-fluid">
- 
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-    
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-
-                    </div>
-                </div>
-  
-    </section>
-    <section class="container-fluid">
-    <footer class="container-fluid ">
-        <div id="footer-details " class="row ">
-            <div class="col-sm-4 ">
-                <ul class="list-inline social-links ">
-                    <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
-                    <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
-                  <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
-                </ul>
-            </div>
-        </div>
     </footer>
-    </section>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
