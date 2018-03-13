@@ -7,7 +7,11 @@
    
 }
 
-
+.fill {
+    /*height:51em;*/
+min-height:90vh;
+    
+}
 .caption {
     font-family: "Tahoma", sans-serif;
     font-weight: 300;
@@ -227,9 +231,10 @@ footer {
     /* tricia changed */
     /*
     background: #e84610;
-    */
-      background: #c0d0e9;    /* pink tone */
-  
+
+      background: #c0d0e9;   /*  blue 
+*/
+    background: #b1b1b7;    /* dark grey */
 }
 
 
