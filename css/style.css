@@ -1,25 +1,104 @@
 
 /* Added by Tricia */
-.img-small {
-    height:10em;
-
-    width: 10em;
-   
+@media (max-width: 767px) {
+    .img-small {
+        height:10em;
+        width: 10em;
+    }
 }
 
-.fill {
-    /*height:51em;*/
-min-height:90vh;
+@media (min-width: 768px) and (max-width: 1199px) {
+    .img-small {
+        height:15em;
+        width: 15em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-small {
+        height:10em;
+        width: 10em;
+    }
+}
+
+/* x-small e.g. iphone */
+@media (max-width: 767px) {
+    .fill-hdr {
+        height:6vh;
+        color:blue;
+        background-color:blue;
+    }
     
+    .fill-footer {
+        height:12vh;
+    }
+    
+    .fill-body {
+        min-height:82vh;
+    }
 }
+
+/* small e.g. ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .fill-hdr {
+        height:4vh;
+        color:red;
+        background-color:red;
+    }
+    
+    .fill-footer {
+        height:7vh;
+    }
+    
+    .fill-body {
+        min-height:89vh;
+    }  
+}
+
+/* medium e.g. ipad pro */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fill-hdr {
+        height:3vh;
+        color:purple;
+        background-color:purple;
+    }
+    
+    .fill-footer {
+        height:5vh;
+    }
+    
+    .fill-body {
+        min-height:92vh;
+    }
+}
+
+/* large - desktop */
+@media (min-width: 1200px) {
+    .fill-hdr {
+        height:6vh;
+        color:pink;
+        background-color:pink;
+    }
+    
+    .fill-footer {
+        height:8vh;
+    }
+    
+    .fill-body {
+        min-height:86vh;
+    }
+}
+
 .caption {
-    font-family: "Tahoma", sans-serif;
-    font-weight: 300;
+    font-family: 'sirin stencil', sans-serif;
+    /*font-family: "Tahoma", sans-serif;*/
+    font-weight: 500;
     color: black;
 }
 
 
 .bg-color-contact {
+    /*
     background-color: #efeaea;  /* very light grey */
 
 }
@@ -30,11 +109,59 @@ min-height:90vh;
     /* changed tricia */
     color: blue;
     background-color: white;
+    font-family:'sirin stencil';
+    font-size: 150%;
 }
 
 .video-container p {
     color: black;
     font-size: 150%;
+    font-family: 'sirin stencil';
+}
+
+.mg-top {
+    margin-top:60px;
+}
+
+.mg-bottom {
+    margin-bottom:30px;
+}
+
+
+.bg-img {
+    background-image: url('../photos/album2-BnW.jpg');
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.audio-frame {
+    border: 5px solid #4a4a4f;
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+
+.photo-frame {
+    border: 5px solid #4a4a4f;
+    background-color:white;
+    margin-top: 5px;
+    margin-bottom:5px;
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 5px;
+}
+
+.booking-link {
+    font-weight: normal;
+    color: #d0d023;
+}
+
+.booking-link:hover {
+    font-weight: normal;
+    color: #ffff00;
 }
 /* end added by Tricia */
 
@@ -70,7 +197,9 @@ body {
     color: #555555;
     */
     /* tricia changes */
-    font-family: Tahoma, sans-serif;
+    /*font-family: Tahoma, sans-serif;*/
+    /*font-family: 'sirin stencil', sans-serif;*/
+    font-family: 'rock salt', sans-serif;
     background-color: #efeaea;  /* very light grey */
     color: black;    /* text colour for body */
 }
@@ -202,7 +331,7 @@ footer {
 
 .social-links {
     /* tricia changed */
-    padding: 15px;
+    padding: 10px;
 }
 
 .social-links li a i {
@@ -243,19 +372,57 @@ footer {
 
 /*--------------------------------------------Contact*/
 
-.contact-heading {
-    font-family: "Tahoma", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+/* all these added by tricia */
+@media(max-width: 767px) {
+
+    .text-heading {
+        font-weight: bold;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 15px;
+    }
+
+        .contact-heading {
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
 }
 
+@media(min-width: 768px) {
+    
+    .text-heading {
+        font-weight: normal;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 24px;
+    }
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
+        
+    .contact-heading {
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
 }
+ 
+ 
+/*.center-form {*/
+/*    max-width: 70%;*/
+/*    font-family: 'sirin stencil';*/
+/*    border: 5px solid #4a4a4f;*/
+/*    background-color:white;*/
+/*    margin-top: 30px;*/
+/*    margin-bottom:20px;*/
+/*    margin-left:auto;*/
+/*    margin-right: auto;*/
+/*    padding-left: 5px;*/
+/*    padding-right: 5px;*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 5px;*/
+/*}*/
 
 button[type="submit"] {
     margin-top: 15px;
@@ -270,18 +437,37 @@ button[type="submit"] {
 
 /*--------------------------------------------Media Queries*/
 
-@media(min-width: 992px) {
-    .section-column {
-        padding: 0 30px 30px;
-        float: none;
-        display: table-cell;
-    }
-
+@media(min-width: 1200px) {
     .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
         max-width: 50%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color:white;
+        margin-top: 30px;
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media(max-width: 1199px) {
+    .center-form {
+        max-width: 70%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color:white;
+        margin-top: 30px;
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
 }
 
@@ -304,6 +490,7 @@ button[type="submit"] {
     background-color: #345c98;    
     border: 0;
     color: black;
+    font-family:'sirin stencil';
 }
 
 
@@ -385,12 +572,56 @@ button[type="submit"] {
     margin-bottom: 30px;
 }
 
-.jumbotron .lead {
-    /* changed tricia
-    color: #a7a7a7;
-    */
-    color: white;
-    margin: 25px 0;
+@media (max-width: 767px) {
+
+    .jumbotron .lead {
+        /* changed tricia
+        color: #a7a7a7;
+        */
+        color: white;
+        margin: 25px 0;
+        padding: 50px 0px;
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+    .jumbotron .lead {
+        /* changed tricia
+        color: #a7a7a7;
+        */
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+
+    .jumbotron .lead {
+        /* changed tricia
+        color: #a7a7a7;
+        */
+        color: white;
+        margin: 25px 0;
+        padding: 300px 0px;
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .jumbotron .lead {
+        /* changed tricia
+        color: #a7a7a7;
+        */
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
 }
 
 .jumbotron small {
@@ -402,13 +633,13 @@ button[type="submit"] {
 .callout-container {
     height: 100vh;
 
-    background: url('../photos/band5.jpg') no-repeat center center fixed;
+    background: url('../photos/band5-lightened.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    display: flex;
+/* tricia commented this out as it was causing problems for xs display */
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
 
