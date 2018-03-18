@@ -1,108 +1,11 @@
-
-/* Added by Tricia */
-@media (max-width: 767px) {
-    .img-small {
-        height:10em;
-        width: 10em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .img-small {
-        height:15em;
-        width: 15em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .img-small {
-        height:10em;
-        width: 10em;
-    }
-}
-
-/* x-small e.g. iphone */
-@media (max-width: 767px) {
-    .fill-hdr {
-        height:6vh;
-        color:blue;
-        background-color:blue;
-    }
-    
-    .fill-footer {
-        height:12vh;
-    }
-    
-    .fill-body {
-        min-height:82vh;
-    }
-}
-
-/* small e.g. ipad */
-@media (min-width: 768px) and (max-width: 991px) {
-    .fill-hdr {
-        height:4vh;
-        color:red;
-        background-color:red;
-    }
-    
-    .fill-footer {
-        height:7vh;
-    }
-    
-    .fill-body {
-        min-height:89vh;
-    }  
-}
-
-/* medium e.g. ipad pro */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .fill-hdr {
-        height:3vh;
-        color:purple;
-        background-color:purple;
-    }
-    
-    .fill-footer {
-        height:5vh;
-    }
-    
-    .fill-body {
-        min-height:92vh;
-    }
-}
-
-/* large - desktop */
-@media (min-width: 1200px) {
-    .fill-hdr {
-        height:6vh;
-        color:pink;
-        background-color:pink;
-    }
-    
-    .fill-footer {
-        height:8vh;
-    }
-    
-    .fill-body {
-        min-height:86vh;
-    }
-}
-
+/* caption is for displaying title with music or photos */
 .caption {
     font-family: 'sirin stencil', sans-serif;
-    /*font-family: "Tahoma", sans-serif;*/
     font-weight: 500;
     color: black;
 }
 
-
-.bg-color-contact {
-    /*
-    background-color: #efeaea;  /* very light grey */
-
-}
-
+/* alert box contents on main page */
 .alert {
     margin-top: 20px;
     margin-bottom:20px;
@@ -113,21 +16,24 @@
     font-size: 150%;
 }
 
+/* video-container encloses the video and its caption on main page */
 .video-container p {
     color: black;
     font-size: 150%;
     font-family: 'sirin stencil';
 }
 
+/* mg-top is used to add a top margin to elements */
 .mg-top {
     margin-top:60px;
 }
 
+/* mg-bottom is used to add a bottom margin to elements */
 .mg-bottom {
     margin-bottom:30px;
 }
 
-
+/* bg-img is a background image for all pages other than the main page */
 .bg-img {
     background-image: url('../photos/album2-BnW.jpg');
     background-position: bottom ;
@@ -136,6 +42,7 @@
 
 }
 
+/* audio-frame wraps music and its caption on Music page */
 .audio-frame {
     border: 5px solid #4a4a4f;
     background-color:white;
@@ -144,6 +51,7 @@
     padding-left:10px;
 }
 
+/* photo-frame adds a border and padding around a photo on Photos page */
 .photo-frame {
     border: 5px solid #4a4a4f;
     background-color:white;
@@ -154,6 +62,7 @@
     padding: 5px;
 }
 
+/* booking-link is for the booking link on the main page text */
 .booking-link {
     font-weight: normal;
     color: #d0d023;
@@ -163,109 +72,225 @@
     font-weight: normal;
     color: #ffff00;
 }
-/* end added by Tricia */
 
-/*--------------------------------------------Colors*/
 
-.bg-color-name-title {
-    background-color: #676767;
+/*** media queries ***/
+
+/* x-small */
+@media (max-width: 767px) {
+    
+
+    /* fill-hdr, fill-body, fill-footer are used to fill the viewport completely with */
+    /* the 3 different parts of the content */    
+    .fill-hdr {
+        height:6vh;
+        background-color:blue;
+    }
+    
+    .fill-footer {
+        height:12vh;
+    }
+    
+    .fill-body {
+        min-height:82vh;
+    }
+
+    /* text-heading is for headings on pages */
+    .text-heading {
+        font-weight: bold;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 15px;
+    }
+
+    /* contact-heading is for heading on the Bookings page */
+    .contact-heading {
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /* The main text on the jumbotron on the main page */
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 50px 0px;
+        font-size: small;
+    }
+
+    /* img-small is for displaying the photos on the Photos page */
+    .img-small {
+        height:10em;
+        width: 10em;
+    }
+
+}
+
+/* xs to medium */
+@media(max-width: 1199px) {
+    /* center-form is used for the form on the Bookings page */
+    .center-form {
+        max-width: 70%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color:white;
+        margin-top: 30px;
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+/* small */
+@media (min-width: 768px) and (max-width: 991px) {
+    .fill-hdr {
+        height:4vh;
+        background-color:red;
+    }
+    
+    .fill-footer {
+        height:7vh;
+    }
+    
+    .fill-body {
+        min-height:89vh;
+    }  
+
+    
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
+}
+
+/* small to medium */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .img-small {
+        height:15em;
+        width: 15em;
+    }
+}
+
+/* small upwards */
+@media(min-width: 768px) {
+    
+    .text-heading {
+        font-weight: normal;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 24px;
+    }
+
+    .contact-heading {
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fill-hdr {
+        height:3vh;
+        background-color:purple;
+    }
+    
+    .fill-footer {
+        height:5vh;
+    }
+    
+    .fill-body {
+        min-height:92vh;
+    }
+
+    
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 300px 0px;
+        font-size: x-large;
+    }
 }
 
 
-.ui-menu-color-home {
-    background-color: #e67e22;
+/* large */
+@media (min-width: 1200px) {
+    .img-small {
+        height:10em;
+        width: 10em;
+    }
+
+    .fill-hdr {
+        height:6vh;
+        background-color:pink;
+    }
+    
+    .fill-footer {
+        height:8vh;
+    }
+    
+    .fill-body {
+        min-height:86vh;
+    }
+
+    .center-form {
+        max-width: 50%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color:white;
+        margin-top: 30px;
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
 }
 
-.ui-menu-color-resume {
-    background-color: #9b59b6;
-}
+/*** end media queries ***/
 
-.ui-menu-color-contact {
-    background-color: #3498db;
-}
+/*** From here onwards there is CSS that was copied from the Whiskey Drop and Resume ***/
+/*** examples, some of it adjusted slightly. ***/
 
-.ui-menu-color-download {
-    background-color: #525252;
-}
+/* From Resume project */
+/* Used Contact form as basis for Bookings page */
+/* Used social media icons in footer */
 
 
+/* Used the folloiwng from Whiskey Drop example */
+/* navbar (Changed the navbar collapse to non-transparent */
+/* jumbotron (changed colours and used media queries for responsive) */
+/* part of callout */
+    
 body {
     font-weight: 300;
-    /*
-    font-family: Roboto, sans-serif;
-    background-color: #525252;
-    color: #555555;
-    */
-    /* tricia changes */
-    /*font-family: Tahoma, sans-serif;*/
-    /*font-family: 'sirin stencil', sans-serif;*/
     font-family: 'rock salt', sans-serif;
     background-color: #efeaea;  /* very light grey */
     color: black;    /* text colour for body */
 }
 
 
-/*--------------------------------------------Special Paddings/Margins/Text*/
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.general-sub {
-    font-family: "Tahoma", sans-serif;
-    font-weight: 300;
-    color: #fafafa;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-
-.row-table {
-    display: table;
-}
-
-
-/*--------------------------------------------Heading*/
-
 header {
     margin: 0;
 }
 
-.heading {
-    margin-left: 50px;
-}
-
-
-
-.name {
-    font-family: "Tahoma", sans-serif;
-    font-weight: 100;
-    font-size: 46px;
-    margin-top: 50px;
-    color: #ffffff;
-}
-
-.title {
-    /* tricia changed */
-    /*
-    font-family: "Roboto", sans-serif;
-    */
-    font-family: "Tahoma", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 90px;
-    color: #ffffff;
-}
 
 #nav {
     margin: 0;
@@ -275,56 +300,10 @@ header {
     padding: 0;
 }
 
-.menuitem {
-    height: 120px;
-    text-align: center;
-    padding: 0;
-}
-
-.menuitem a {
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
-    height: 120px;
-}
-
-
-.menuitem a i {
-    padding-top: 22px;
-    display: block;
-    color: #fafafa;
-    font-size: 26px;
-}
-
-.menuitem span {
-    display: block;
-    width: 100%;
-    padding-top: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
-
-/*--------------------------------------------Hover.css*/
-
-.hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.2);
-    height: 120px;
-}
-
-
-/*--------------------------------------------Footer*/
+/*** footer data ***/
+/* based on Resume project */
 
 footer {
-    /* tricia changed
-    background-color: #525252;
-    color: #fafafa;
-    min-height: 120px;
-
-    */
     background-color: black;
     margin: 0;
 }
@@ -357,121 +336,18 @@ footer {
 }
 
 .social-links li a i:hover {
-    /* tricia changed */
-    /*
-    background: #e84610;
-
-      background: #c0d0e9;   /*  blue 
-*/
     background: #b1b1b7;    /* dark grey */
 }
 
+/*** end footer data ***/
 
-
-
-
-/*--------------------------------------------Contact*/
-
-/* all these added by tricia */
-@media(max-width: 767px) {
-
-    .text-heading {
-        font-weight: bold;
-        /*margin-top: 25px;*/
-        /*margin-bottom: 20px;*/
-        font-size: 15px;
-    }
-
-        .contact-heading {
-        font-weight: bold;
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-}
-
-@media(min-width: 768px) {
-    
-    .text-heading {
-        font-weight: normal;
-        /*margin-top: 25px;*/
-        /*margin-bottom: 20px;*/
-        font-size: 24px;
-    }
-
-        
-    .contact-heading {
-        font-weight: normal;
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-}
- 
- 
-/*.center-form {*/
-/*    max-width: 70%;*/
-/*    font-family: 'sirin stencil';*/
-/*    border: 5px solid #4a4a4f;*/
-/*    background-color:white;*/
-/*    margin-top: 30px;*/
-/*    margin-bottom:20px;*/
-/*    margin-left:auto;*/
-/*    margin-right: auto;*/
-/*    padding-left: 5px;*/
-/*    padding-right: 5px;*/
-/*    padding-top: 10px;*/
-/*    padding-bottom: 5px;*/
-/*}*/
-
+/* Submit button on Bookings page */
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    /* Tricia changed */
-    /*
-    background-color: #d47d7d;
-    */
     background-color: #345c98;
     color: #fafafa;
 }
-
-/*--------------------------------------------Media Queries*/
-
-@media(min-width: 1200px) {
-    .center-form {
-        max-width: 50%;
-        font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
-        background-color:white;
-        margin-top: 30px;
-        margin-bottom:20px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-}
-
-@media(max-width: 1199px) {
-    .center-form {
-        max-width: 70%;
-        font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
-        background-color:white;
-        margin-top: 30px;
-        margin-bottom:20px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-}
-
-/* From Whiskey Drop example */
 
 /* Navbar */
 
@@ -482,17 +358,11 @@ button[type="submit"] {
     left: 0;
     width: 100%;
     z-index: 1;
-    /* tricia changed */
-    /*
-    background-color: rgba(0, 0, 0, .25);
-    */
-    /*background-color: #d47d7d;    /*reddish colour */
     background-color: #345c98;    
     border: 0;
     color: black;
     font-family:'sirin stencil';
 }
-
 
 .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -510,7 +380,6 @@ button[type="submit"] {
     background-color: white;
 }
 
-
 .navbar .navbar-brand {
     font-weight: bold;
     color: white;
@@ -519,7 +388,6 @@ button[type="submit"] {
 .navbar .navbar-brand:hover {
     color: white;
 }
-
 
 .navbar .navbar-brand:hover {
     color: white;
@@ -566,70 +434,6 @@ button[type="submit"] {
     background-color: transparent;
 }
 
-.jumbotron h1 {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-@media (max-width: 767px) {
-
-    .jumbotron .lead {
-        /* changed tricia
-        color: #a7a7a7;
-        */
-        color: white;
-        margin: 25px 0;
-        padding: 50px 0px;
-        font-size: small;
-    }
-}
-
-@media (min-width: 768px) and (max-width:991px) {
-
-    .jumbotron .lead {
-        /* changed tricia
-        color: #a7a7a7;
-        */
-        color: white;
-        margin: 25px 0;
-        padding: 200px 0px;
-        font-size: x-large;
-    }
-}
-
-@media (min-width: 992px) and (max-width:1199px) {
-
-    .jumbotron .lead {
-        /* changed tricia
-        color: #a7a7a7;
-        */
-        color: white;
-        margin: 25px 0;
-        padding: 300px 0px;
-        font-size: x-large;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .jumbotron .lead {
-        /* changed tricia
-        color: #a7a7a7;
-        */
-        color: white;
-        margin: 25px 0;
-        padding: 200px 0px;
-        font-size: x-large;
-    }
-}
-
-.jumbotron small {
-    font-size: 60%;
-    font-style: italic;
-    color: #d0d0d0;
-}
-
 .callout-container {
     height: 100vh;
 
@@ -638,11 +442,10 @@ button[type="submit"] {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-/* tricia commented this out as it was causing problems for xs display */
+    /* tricia commented this out as it was causing problems for xs display */
     /*display: flex;*/
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
