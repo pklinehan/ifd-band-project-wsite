@@ -84,7 +84,6 @@
     /* the 3 different parts of the content */    
     .fill-hdr {
         height:6vh;
-        background-color:blue;
     }
     
     .fill-footer {
@@ -150,7 +149,6 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .fill-hdr {
         height:4vh;
-        background-color:red;
     }
     
     .fill-footer {
@@ -200,7 +198,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .fill-hdr {
         height:3vh;
-        background-color:purple;
     }
     
     .fill-footer {
@@ -230,7 +227,6 @@
 
     .fill-hdr {
         height:6vh;
-        background-color:pink;
     }
     
     .fill-footer {
@@ -360,8 +356,10 @@ button[type="submit"] {
     z-index: 1;
     background-color: #345c98;    
     border: 0;
+    border-radius: 0; /* straight border */
     color: black;
     font-family:'sirin stencil';
+    
 }
 
 .navbar-default .navbar-collapse {
