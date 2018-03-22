@@ -39,15 +39,24 @@
 
     <section class="container-fluid fill-body bg-img">
          <div class="row mg-top">
-            <div>
-                <p class="contact-heading text-center">We are available to perform at your events</p>
-                <p class="contact-heading text-center">Send us details of your event below</p>
-            </div>
+            <p class="text-heading text-center mg-bottom">Book us for your event</p>
+            <p class="text-heading text-center">Send us details of your event below</p>
             <div class="center-form">
                 <form>
+                    <label>Name</label>
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Name" required/>
+                    <label>Email</label>
                     <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Your Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Details of your event" required></textarea>
+                    <label>Phone number</label>
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your phone number"/>
+                    <label for="eventNum">Expected number at event</label>
+                    <select class="form-control" id="eventNum">
+                       <option value="to500">Up to 500</option>
+                       <option value="to1000">500 - 1000</option>
+                       <option value="over1000">Over 1000</option>
+                    </select> 
+                    <label>Event details</label>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Details of your event"></textarea>
                     <button type="submit" class="btn btn-secondary center-block">Send Details</button>
                 </form>
             </div>

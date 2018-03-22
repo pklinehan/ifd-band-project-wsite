@@ -25,7 +25,7 @@
 
 /* mg-top is used to add a top margin to elements */
 .mg-top {
-    margin-top:60px;
+    margin-top:20px;
 }
 
 /* mg-bottom is used to add a bottom margin to elements */
@@ -49,6 +49,7 @@
     margin-top: 20px;
     margin-bottom:20px;
     padding-left:10px;
+    padding-right:10px;
 }
 
 /* photo-frame adds a border and padding around a photo on Photos page */
@@ -100,6 +101,9 @@ header {
     margin: 0;
 }
 
+audio {
+    width:90%;
+}    
 
 #nav {
     margin: 0;
@@ -290,7 +294,7 @@ button[type="submit"] {
 
 .text-heading {
         font-weight: bold;
-        /*margin-top: 25px;*/
+        margin-top: 20px;
         /*margin-bottom: 20px;*/
         font-size: 15px;
 }
@@ -325,7 +329,8 @@ button[type="submit"] {
 .center-form {
         max-width: 70%;
         font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
+        border: 2px solid #4a4a4f;
+        border-radius: 5px;
         background-color: white;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -369,7 +374,7 @@ button[type="submit"] {
 
     .text-heading {
         font-weight: normal;
-        /*margin-top: 25px;*/
+        margin-top: 30px;
         /*margin-bottom: 20px;*/
         font-size: 24px;
     }
@@ -384,6 +389,9 @@ button[type="submit"] {
     .navbar-default .navbar-nav {
         float: right;    /* menu bar options displayed at right */
     }
+    /*.mg-top {*/
+    /*    margin-top:60px;*/
+    /*}*/
 }
 
 /******* MEDIUM ********/
@@ -433,7 +441,8 @@ button[type="submit"] {
     .center-form {
         max-width: 50%;
         font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
+        border: 2px solid #4a4a4f;
+        border-radius: 5px;
         background-color:white;
         margin-top: 30px;
         margin-bottom:20px;
