@@ -74,193 +74,6 @@
 }
 
 
-/*** media queries ***/
-
-/* x-small */
-@media (max-width: 767px) {
-    
-
-    /* fill-hdr, fill-body, fill-footer are used to fill the viewport completely with */
-    /* the 3 different parts of the content */    
-    .fill-hdr {
-        height:6vh;
-    }
-    
-    .fill-footer {
-        height:12vh;
-    }
-    
-    .fill-body {
-        min-height:82vh;
-    }
-
-    /* text-heading is for headings on pages */
-    .text-heading {
-        font-weight: bold;
-        /*margin-top: 25px;*/
-        /*margin-bottom: 20px;*/
-        font-size: 15px;
-    }
-
-    /* contact-heading is for heading on the Bookings page */
-    .contact-heading {
-        font-weight: bold;
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-
-    /* The main text on the jumbotron on the main page */
-    .jumbotron .lead {
-        color: white;
-        margin: 25px 0;
-        padding: 50px 0px;
-        font-size: small;
-    }
-
-    /* img-small is for displaying the photos on the Photos page */
-    .img-small {
-        height:10em;
-        width: 10em;
-    }
-
-}
-
-/* xs to medium */
-@media(max-width: 1199px) {
-    /* center-form is used for the form on the Bookings page */
-    .center-form {
-        max-width: 70%;
-        font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
-        background-color:white;
-        margin-top: 30px;
-        margin-bottom:20px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-}
-
-/* small */
-@media (min-width: 768px) and (max-width: 991px) {
-    .fill-hdr {
-        height:4vh;
-    }
-    
-    .fill-footer {
-        height:7vh;
-    }
-    
-    .fill-body {
-        min-height:89vh;
-    }  
-
-    
-    .jumbotron .lead {
-        color: white;
-        margin: 25px 0;
-        padding: 200px 0px;
-        font-size: x-large;
-    }
-}
-
-/* small to medium */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .img-small {
-        height:15em;
-        width: 15em;
-    }
-}
-
-/* small upwards */
-@media(min-width: 768px) {
-    
-    .text-heading {
-        font-weight: normal;
-        /*margin-top: 25px;*/
-        /*margin-bottom: 20px;*/
-        font-size: 24px;
-    }
-
-    .contact-heading {
-        font-weight: normal;
-        margin-top: 25px;
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-}
-
-/* medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .fill-hdr {
-        height:3vh;
-    }
-    
-    .fill-footer {
-        height:5vh;
-    }
-    
-    .fill-body {
-        min-height:92vh;
-    }
-
-    
-    .jumbotron .lead {
-        color: white;
-        margin: 25px 0;
-        padding: 300px 0px;
-        font-size: x-large;
-    }
-}
-
-
-/* large */
-@media (min-width: 1200px) {
-    .img-small {
-        height:10em;
-        width: 10em;
-    }
-
-    .fill-hdr {
-        height:6vh;
-    }
-    
-    .fill-footer {
-        height:8vh;
-    }
-    
-    .fill-body {
-        min-height:86vh;
-    }
-
-    .center-form {
-        max-width: 50%;
-        font-family: 'sirin stencil';
-        border: 5px solid #4a4a4f;
-        background-color:white;
-        margin-top: 30px;
-        margin-bottom:20px;
-        margin-left:auto;
-        margin-right: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-
-    .jumbotron .lead {
-        color: white;
-        margin: 25px 0;
-        padding: 200px 0px;
-        font-size: x-large;
-    }
-}
-
-/*** end media queries ***/
 
 /*** From here onwards there is CSS that was copied from the Whiskey Drop and Resume ***/
 /*** examples, some of it adjusted slightly. ***/
@@ -457,3 +270,182 @@ button[type="submit"] {
 }
 
 
+/* fill-hdr, fill-body, fill-footer are used to fill the viewport completely with */
+/* the 3 different parts of the content */
+
+.fill-hdr {
+        height: 6vh;
+}
+
+.fill-footer {
+        height: 12vh;
+}
+
+.fill-body {
+        min-height: 82vh;
+}
+
+/* text-heading is for headings on pages */
+
+.text-heading {
+        font-weight: bold;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 15px;
+}
+
+/* contact-heading is for heading on the Bookings page */
+
+.contact-heading {
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 15px;
+}
+
+/* The main text on the jumbotron on the main page */
+
+.jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 50px 0px;
+        font-size: small;
+}
+
+/* img-small is for displaying the photos on the Photos page */
+
+.img-small {
+        height: 10em;
+        width: 10em;
+}
+
+/* center-form is used for the form on the Bookings page */
+
+.center-form {
+        max-width: 70%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color: white;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+}
+  
+/*** media queries ***/
+    
+/******* SMALL ********/
+
+@media (min-width: 768px){
+    .fill-hdr {
+        height:4vh;
+    }
+    
+    .fill-footer {
+        height:7vh;
+    }
+    
+    .fill-body {
+        min-height:89vh;
+    }  
+
+    
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
+
+    .img-small {
+        height:15em;
+        width: 15em;
+    }
+
+    .text-heading {
+        font-weight: normal;
+        /*margin-top: 25px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 24px;
+    }
+
+    .contact-heading {
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+/******* MEDIUM ********/
+
+@media (min-width: 992px) {
+    .fill-hdr {
+        height:3vh;
+    }
+    
+    .fill-footer {
+        height:5vh;
+    }
+    
+    .fill-body {
+        min-height:92vh;
+    }
+
+    
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 300px 0px;
+        font-size: x-large;
+    }
+}
+
+/******* LARGE ********/
+
+@media (min-width: 1200px) {
+    .img-small {
+        height:10em;
+        width: 10em;
+    }
+
+    .fill-hdr {
+        height:6vh;
+    }
+    
+    .fill-footer {
+        height:8vh;
+    }
+    
+    .fill-body {
+        min-height:86vh;
+    }
+
+    .center-form {
+        max-width: 50%;
+        font-family: 'sirin stencil';
+        border: 5px solid #4a4a4f;
+        background-color:white;
+        margin-top: 30px;
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .jumbotron .lead {
+        color: white;
+        margin: 25px 0;
+        padding: 200px 0px;
+        font-size: x-large;
+    }
+}
+
+/*** end media queries ***/
