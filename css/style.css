@@ -35,10 +35,10 @@
 
 /* bg-img is a background image for all pages other than the main page */
 .bg-img {
-    background-image: url('../photos/album2-BnW.jpg');
+    background-image: url('../photos/music-sheet.jpg');
     background-position: bottom ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 800px 100%;
 
 }
 
@@ -50,6 +50,13 @@
     margin-bottom:20px;
     padding-left:10px;
     padding-right:10px;
+}
+
+.video-frame {
+    width: 80vw;
+    height:200px;
+    margin-top: 20px;
+    margin-bottom:40px;
 }
 
 /* photo-frame adds a border and padding around a photo on Photos page */
@@ -257,7 +264,7 @@ button[type="submit"] {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 800px 100%;
     /* tricia commented this out as it was causing problems for xs display */
     /*display: flex;*/
     align-items: center;
@@ -392,6 +399,37 @@ button[type="submit"] {
     /*.mg-top {*/
     /*    margin-top:60px;*/
     /*}*/
+    
+    .bg-img {
+        background-image: url('../photos/music-sheet.jpg');
+        background-position: bottom ;
+        background-repeat: no-repeat;
+        background-size: 1000px 100%;
+
+    }
+
+    .callout-container {
+        height: 100vh;
+    
+        background: url('../photos/band5-lightened.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 1000px 100%;
+        /* tricia commented this out as it was causing problems for xs display */
+        /*display: flex;*/
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+
+    .video-frame {
+        width: 40vw;
+        height:300px;
+        margin-top: 20px;
+        margin-bottom:40px;
+    }    
 }
 
 /******* MEDIUM ********/
@@ -415,6 +453,36 @@ button[type="submit"] {
         margin: 25px 0;
         padding: 300px 0px;
         font-size: x-large;
+    }
+    
+    .bg-img {
+        background-image: url('../photos/music-sheet.jpg');
+        background-position: bottom ;
+        background-repeat: no-repeat;
+        background-size: 1200px 100%;
+
+    }
+
+    .callout-container {
+        height: 100vh;
+    
+        background: url('../photos/band5-lightened.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 1200px 100%;
+        /* tricia commented this out as it was causing problems for xs display */
+        /*display: flex;*/
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .video-frame {
+        width: 40vw;
+        height:400px;
+        margin-top: 20px;
+        margin-bottom:40px;
     }
 }
 
@@ -460,6 +528,42 @@ button[type="submit"] {
         padding: 200px 0px;
         font-size: x-large;
     }
+
+    /* bg-img is a background image for all pages other than the main page */
+    .bg-img {
+        background-image: url('../photos/music-sheet.jpg');
+        background-position: bottom ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+    }
+
+    .callout-container {
+        height: 100vh;
+        background: url('../photos/band5-lightened.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* tricia commented this out as it was causing problems for xs display */
+        /*display: flex;*/
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .img-small {
+            height: 15em;
+            width: 15em;
+    }    
+
+    .video-frame {
+        width: 40vw;
+        height:300px;
+        margin-top: 20px;
+        margin-bottom:40px;
+    }
+    
 }
 
 /*** end media queries ***/

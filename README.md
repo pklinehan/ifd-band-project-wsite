@@ -61,6 +61,8 @@ For each display the text sizing, field sizing, menu operation and page layout (
 
 Code from other sources
 -----------------------
+The image navigation on the Music page uses the fancybox tool (http://fancybox.net).
+
 The code for the website made use of the following code from examples covered in lessons:
 
 Whiskey Drop example
