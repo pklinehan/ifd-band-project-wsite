@@ -6,17 +6,17 @@ This is a static (front-end only) website for the Monkees band. It is intended f
 - Publicise availability of band to perform at events such as weddings and parties
 - Provide links to their Facebook, Twitter and YouTube pages.
 
-The following were provided for use on the website – photos, a video clip and audio clips of the band
+The following were provided for use on the website – photos, video and audio clips of the band
 
-This website was developed using HTML, CSS and Bootstrap.
+This website was developed using HTML5, CSS and Bootstrap.
 
 Website content
 ---------------
 This website consists of the following pages:
-Main page - callout section, alert section for news, video
-Photos page - displays seletion of photos of which can be expanded
+Main page - callout section, alert section for news, event section, video
+Photos page - displays selection of photos which can be expanded
 Music page - displays selection of music which can be played
-Bookings page - contain booking form for events
+Bookings page - contains booking form for events
 
 Page structure
 --------------
@@ -39,17 +39,17 @@ All menu options
 All social media icons tested for hover behaviour
 
 Main page:
-The link to the bookings page from the text in the callout section was tested
+The link to the bookings page from the text in the callout section was tested.
 The video was tested that it ran correctly
 
 Photos page:
-Each photo was tested to make sure it opened to a larger version in a new tab
+The photos were tested to make sure they expanded when selected and that the full sequence of photos was then made available.
 
 Music page:
 Each song was tested to make sure it played correctly
 
 Bookings page:
-The Submit button was tested to make sure validation of the fields was perfomed
+The submit button was tested to make sure validation of the fields was perfomed
 
 Testing for responsive behaviour
 --------------------------------
@@ -58,6 +58,7 @@ Within DevTools the device toolbar was used to test the output for iPhone7 (x-sm
 The desktop (large device) behaviour was tested in the Chrome browser window.
 For each device, each page was checked to make sure it displayed correctly and operated correctly.
 For each display the text sizing, field sizing, menu operation and page layout (e.g. text filled device screen) was tested.
+After this testing, the website was tested on an actual iPhone 5 and Ipad.
 
 Code from other sources
 -----------------------
